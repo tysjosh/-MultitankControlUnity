@@ -80,14 +80,35 @@ receiving.
 
 ```c#
   public void Send(double[] val)
-{
-for (int i = 0; i < val.Length; i++)
-{
-IPEndPoint serverEndpoint = new IPEndPoint(IPAddress.Parse(senderIp), senderPort);
-byte[] sendBytes = BitConverter.GetBytes(i);
-udpClient.Send(sendBytes, sendBytes.Length, serverEndpoint);
-} }
-´´´
+  {
+    for (int i = 0; i < val.Length; i++)
+    {
+      IPEndPoint serverEndpoint = new IPEndPoint(IPAddress.Parse(senderIp), senderPort);
+      byte[] sendBytes = BitConverter.GetBytes(i);
+      udpClient.Send(sendBytes, sendBytes.Length, serverEndpoint);
+    } 
+  }
+  
+  private void ListenForMessages(UdpClient client)
+  {
+    IPEndPoint remoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
+    while (threadRunning)
+    {
+      byte[] receiveBytes = client.Receive(ref remoteIpEndPoint);
+      double[] values = new double[receiveBytes.Length / 8];
+      for (int i = 0; i < values.Length; i++)
+      {
+        values[i] = BitConverter.ToDouble(receiveBytes, 8 * i);
+        lock (incomingQueue)
+        {
+          incomingQueue.Enqueue(values[i]);
+        } 
+      }
+    }
+  }
+```
+
+
 ## Results
 The pictures below show snapshots taken while a user put on the Meta 2 headset to
 utilize the AR application developed and deployed into it. Figure 27,28 and 29 show
