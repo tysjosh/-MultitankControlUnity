@@ -78,6 +78,7 @@ of bytes we want to send. A receiving and sending UDP packets have already been
 installed on the Simulink side to correspond with what the Unity is ending and
 receiving.
 
+### C# function for sending UDP packets from Unity3D to Simulink
 ```c#
   public void Send(double[] val)
   {
@@ -88,7 +89,9 @@ receiving.
       udpClient.Send(sendBytes, sendBytes.Length, serverEndpoint);
     } 
   }
-  
+```
+### C# function for receiving UDP packets in Unity3D from Simulink
+```c#
   private void ListenForMessages(UdpClient client)
   {
     IPEndPoint remoteIpEndPoint = new IPEndPoint(IPAddress.Any, 0);
@@ -111,7 +114,7 @@ receiving.
 
 ## Results
 The pictures below show snapshots taken while a user put on the Meta 2 headset to
-utilize the AR application developed and deployed into it. Figure 27,28 and 29 show
+utilize the AR application developed and deployed into it. Figure below show
 the Meta views while a user is using the developed AR application to send control
 signals to the Multitank system.
 The list of what the user is able to do is listed below;
