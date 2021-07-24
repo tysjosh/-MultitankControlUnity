@@ -24,14 +24,14 @@ The aim of the thesis is to design and develop a Meta 2 headset application with
 unique virtual object for complementing the control of a real-life laboratory model
 of an industrial multi-tank system.
 To achieve the design and development of this project, the following were done:
-** Review past works that are related to the project.
-** Choose suitable components that meet the scope of the project.
-** Design the system diagram to integrate various part of the project.
-** Create the virtual model
-** Develop the required scene
-** Develop a closed loop control system to send control signals to the Multitank
+* Review past works that are related to the project.
+* Choose suitable components that meet the scope of the project.
+* Design the system diagram to integrate various part of the project.
+* Create the virtual model
+* Develop the required scene
+* Develop a closed loop control system to send control signals to the Multitank
 system
-** Establish communication between the computer hosting Unity3D and the
+* Establish communication between the computer hosting Unity3D and the
 computer hosting the Simulink
-** Integrate the model, software package and the AR device
-** Testing and debugging.
+* Integrate the model, software package and the AR device
+* Testing and debugging.
