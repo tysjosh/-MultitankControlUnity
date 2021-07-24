@@ -78,7 +78,7 @@ of bytes we want to send. A receiving and sending UDP packets have already been
 installed on the Simulink side to correspond with what the Unity is ending and
 receiving.
 
-### C# function for sending UDP packets from Unity3D to Simulink
+### c# function for sending UDP packets from Unity3D to Simulink
 ```c#
   public void Send(double[] val)
   {
@@ -90,7 +90,7 @@ receiving.
     } 
   }
 ```
-### C# function for receiving UDP packets in Unity3D from Simulink
+### c# function for receiving UDP packets in Unity3D from Simulink
 ```c#
   private void ListenForMessages(UdpClient client)
   {
