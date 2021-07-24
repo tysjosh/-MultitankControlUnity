@@ -38,3 +38,28 @@ system
 computer hosting the Simulink
 * Integrate the model, software package and the AR device
 * Testing and debugging.
+* 
+## System Design
+The system diagram utilizes two
+mode of communication which are wireless and wired. The Meta 2 head-mounted
+display connects via a USB and HDMI cables to a lab PC while the multitank system
+connects to another lab PC via a data acquisition box. Both PC are connected to
+the same router, making it possible to send and receive UDP packets from each
+39other. 
+
+The main task of the laboratory computers is to establish a bidirectional data
+communication between MATLAB and Unity3D, which in turn provide signal to the
+Meta 2 HMD and the Multitank System. The tools and software used are mentioned
+below:
+1. MATLAB/Simulink 2012
+2. Unity3D Editor version 2018.4 withe Vuforia SDK
+3. Account in vuforia development portal
+4. Visual Studio 2019
+5. Router
+6. 2 PCs
+7. Meta 2 and Meta SDK
+8. Multitank System
+9. Cables and Connectors
+
+## Matlab Simulink Diagram
+## Virtual Object Creation
