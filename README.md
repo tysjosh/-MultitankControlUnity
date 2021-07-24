@@ -38,7 +38,7 @@ system
 computer hosting the Simulink
 * Integrate the model, software package and the AR device
 * Testing and debugging.
-* 
+
 ## System Design
 The system diagram utilizes two
 mode of communication which are wireless and wired. The Meta 2 head-mounted
@@ -61,5 +61,41 @@ below:
 8. Multitank System
 9. Cables and Connectors
 
+## Multitank System
 ## Matlab Simulink Diagram
 ## Virtual Object Creation
+## Establishing Connection between Unity3D and MATLAB/Simulink
+For the two stand-alone applications hosted on two different PCs to communicate
+with each other, we need to establish a remote connection between the two hosts.
+Since we will be sending and receiving streams of data, the UDP connectionless
+protocol provides us a viable solution than TCP. 
+
+To establish a UDP connectionless
+protocol, both hosts were connected to the same router(same network), the C#
+scripting available for Unity3D was used to create an instance of a UDP client, set
+up both sending and receiving ports, set up IP addresses, and assign the number
+of bytes we want to send. A receiving and sending UDP packets have already been
+installed on the Simulink side to correspond with what the Unity is ending and
+receiving.
+
+```c#
+  public void Send(double[] val)
+{
+for (int i = 0; i < val.Length; i++)
+{
+IPEndPoint serverEndpoint = new IPEndPoint(IPAddress.Parse(senderIp), senderPort);
+byte[] sendBytes = BitConverter.GetBytes(i);
+udpClient.Send(sendBytes, sendBytes.Length, serverEndpoint);
+} }
+´´´
+## Results
+The pictures below show snapshots taken while a user put on the Meta 2 headset to
+utilize the AR application developed and deployed into it. Figure 27,28 and 29 show
+the Meta views while a user is using the developed AR application to send control
+signals to the Multitank system.
+The list of what the user is able to do is listed below;
+
+1. The user is able to see the digital information
+2. The user is able to interact and give input to the digital UI using the hand
+3. The user is able to use the sliders to set set-points for the tanks in the Multitank system
+4. The user is able to see the graphical representation of the set-points and the process values in real-time
