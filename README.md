@@ -114,7 +114,7 @@ receiving.
 
 ## Results
 The pictures below show snapshots taken while a user put on the Meta 2 headset to
-utilize the AR application developed and deployed into it. Figure below show
+utilize the AR application developed and deployed into it. Figures below show
 the Meta views while a user is using the developed AR application to send control
 signals to the Multitank system.
 The list of what the user is able to do is listed below;
