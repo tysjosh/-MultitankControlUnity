@@ -51,15 +51,15 @@ The main task of the laboratory computers is to establish a bidirectional data
 communication between MATLAB and Unity3D, which in turn provide signal to the
 Meta 2 HMD and the Multitank System. The tools and software used are mentioned
 below:
-1. MATLAB/Simulink 2012
-2. Unity3D Editor version 2018.4 withe Vuforia SDK
-3. Account in vuforia development portal
-4. Visual Studio 2019
-5. Router
-6. 2 PCs
-7. Meta 2 and Meta SDK
-8. Multitank System
-9. Cables and Connectors
+* MATLAB/Simulink 2012
+* Unity3D Editor version 2018.4 withe Vuforia SDK
+* Account in vuforia development portal
+* Visual Studio 2019
+* Router
+* 2 PCs
+* Meta 2 and Meta SDK
+* Multitank System
+* Cables and Connectors
 
 ## Multitank System
 ## Matlab Simulink Diagram
@@ -119,7 +119,7 @@ the Meta views while a user is using the developed AR application to send contro
 signals to the Multitank system.
 The list of what the user is able to do is listed below;
 
-1. The user is able to see the digital information
-2. The user is able to interact and give input to the digital UI using the hand
-3. The user is able to use the sliders to set set-points for the tanks in the Multitank system
-4. The user is able to see the graphical representation of the set-points and the process values in real-time
+* The user is able to see the digital information
+* The user is able to interact and give input to the digital UI using the hand
+* The user is able to use the sliders to set set-points for the tanks in the Multitank system
+* The user is able to see the graphical representation of the set-points and the process values in real-time
