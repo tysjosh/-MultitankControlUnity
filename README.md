@@ -46,6 +46,7 @@ display connects via a USB and HDMI cables to a lab PC while the multitank syste
 connects to another lab PC via a data acquisition box. Both PC are connected to
 the same router, making it possible to send and receive UDP packets from each
 other.
+
 ![System Diagram](https://user-images.githubusercontent.com/37803559/127182410-911d66b7-3367-4a95-a6fa-47da9d21e4b6.PNG)
 
 The main task of the laboratory computers is to establish a bidirectional data
@@ -63,6 +64,7 @@ below:
 * Cables and Connectors
 
 ## Multitank System
+
 ![download](https://user-images.githubusercontent.com/37803559/127180696-bb071d5b-4cf0-4c2d-bf1f-82e9cf382270.jpg)
 
 ## Matlab Simulink Diagram
@@ -71,7 +73,9 @@ The developed virtual object which includes the water tank, the
 metre gauge, the red marker and the water. The water tank comprises of different
 cubes representing the different sides of the tank which all have a transparent white
 material.
+
 ![watertank](https://user-images.githubusercontent.com/37803559/127181996-049bd468-cdf8-42ac-81c4-6fdf5cf3fd77.png)
+
 The Meta 2 Unity SDK is installed into Unity3D by importing the Meta 2 Unity
 SDK package downloaded from Meta 2 website. The SDK includes SLAM, hands
 interaction tracking, example code, and documentation. Now, we are able to interact
@@ -86,8 +90,11 @@ value compares with the set point of the various water tank levels.
 Figure 24 shows the integration of all developed virtual objects. The arrangement
 was done with the aim to make it easy for a user to interact with the sliders easily,
 while also visualizing the data on the graph.
+
 ![CaptureControl](https://user-images.githubusercontent.com/37803559/127182045-e14f3589-3b13-4ada-a89a-3af51d978ee7.PNG)
+
 ![Captureoo](https://user-images.githubusercontent.com/37803559/127182073-ece5bc10-ff02-42f5-9477-824e4bee58d7.PNG)
+
 ![CaptureIntegration](https://user-images.githubusercontent.com/37803559/127182095-adf993dc-cf6c-45c2-830b-1996d92e67dc.PNG)
 
 
