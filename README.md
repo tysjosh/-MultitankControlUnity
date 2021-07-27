@@ -62,8 +62,15 @@ below:
 * Cables and Connectors
 
 ## Multitank System
+![download](https://user-images.githubusercontent.com/37803559/127180696-bb071d5b-4cf0-4c2d-bf1f-82e9cf382270.jpg)
+
 ## Matlab Simulink Diagram
 ## Virtual Object Creation
+The developed virtual object which includes the water tank, the
+metre gauge, the red marker and the water. The water tank comprises of different
+cubes representing the different sides of the tank which all have a transparent white
+material.
+
 ## Establishing Connection between Unity3D and MATLAB/Simulink
 For the two stand-alone applications hosted on two different PCs to communicate
 with each other, we need to establish a remote connection between the two hosts.
