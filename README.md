@@ -1,4 +1,3 @@
-![watertank](https://user-images.githubusercontent.com/37803559/127181960-0827cb11-734b-4b78-908b-03183a20df46.png)
 # Application of Augmented Reality to Industrial Control Systems using Head-Mounted Display
 ## Problem Statement
 SCADA is the conventional method for locally or remotely monitoring and controlling industrial systems on the shop floor and the HMI helps to visualize data but the entire
