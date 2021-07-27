@@ -1,3 +1,4 @@
+![watertank](https://user-images.githubusercontent.com/37803559/127181960-0827cb11-734b-4b78-908b-03183a20df46.png)
 # Application of Augmented Reality to Industrial Control Systems using Head-Mounted Display
 ## Problem Statement
 SCADA is the conventional method for locally or remotely monitoring and controlling industrial systems on the shop floor and the HMI helps to visualize data but the entire
@@ -45,7 +46,8 @@ mode of communication which are wireless and wired. The Meta 2 head-mounted
 display connects via a USB and HDMI cables to a lab PC while the multitank system
 connects to another lab PC via a data acquisition box. Both PC are connected to
 the same router, making it possible to send and receive UDP packets from each
-39other. 
+other.
+![System Diagram](https://user-images.githubusercontent.com/37803559/127182410-911d66b7-3367-4a95-a6fa-47da9d21e4b6.PNG)
 
 The main task of the laboratory computers is to establish a bidirectional data
 communication between MATLAB and Unity3D, which in turn provide signal to the
@@ -70,6 +72,25 @@ The developed virtual object which includes the water tank, the
 metre gauge, the red marker and the water. The water tank comprises of different
 cubes representing the different sides of the tank which all have a transparent white
 material.
+![watertank](https://user-images.githubusercontent.com/37803559/127181996-049bd468-cdf8-42ac-81c4-6fdf5cf3fd77.png)
+The Meta 2 Unity SDK is installed into Unity3D by importing the Meta 2 Unity
+SDK package downloaded from Meta 2 website. The SDK includes SLAM, hands
+interaction tracking, example code, and documentation. Now, we are able to interact
+and manipulate 3D holographic content by adding the MetaCameraRig, MetaHands
+and MetaInputModule to the Unity3D scene. Figure 22 shows the developed virtual
+object which includes the sliders and input field for the setting the setpoints for the
+various water tanks.
+
+Figure 23 shows the developed virtual graph. The graph displays how the process
+value compares with the set point of the various water tank levels.
+
+Figure 24 shows the integration of all developed virtual objects. The arrangement
+was done with the aim to make it easy for a user to interact with the sliders easily,
+while also visualizing the data on the graph.
+![CaptureControl](https://user-images.githubusercontent.com/37803559/127182045-e14f3589-3b13-4ada-a89a-3af51d978ee7.PNG)
+![Captureoo](https://user-images.githubusercontent.com/37803559/127182073-ece5bc10-ff02-42f5-9477-824e4bee58d7.PNG)
+![CaptureIntegration](https://user-images.githubusercontent.com/37803559/127182095-adf993dc-cf6c-45c2-830b-1996d92e67dc.PNG)
+
 
 ## Establishing Connection between Unity3D and MATLAB/Simulink
 For the two stand-alone applications hosted on two different PCs to communicate
